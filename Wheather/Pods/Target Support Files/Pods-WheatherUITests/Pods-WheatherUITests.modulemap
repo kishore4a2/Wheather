@@ -1,0 +1,6 @@
+framework module Pods_WheatherUITests {
+  umbrella header "Pods-WheatherUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
