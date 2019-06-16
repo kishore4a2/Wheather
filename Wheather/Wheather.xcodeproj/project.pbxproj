@@ -8,7 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0B245441C9A933919B6CAAA0 /* Pods_Wheather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 622FBF1E00FD7B3F77FA3137 /* Pods_Wheather.framework */; };
+		15A109885A96B4A5C112FDB1 /* WeatherModuleViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6787AD7E1D58AEDA7F454014 /* WeatherModuleViewInput.swift */; };
+		2B45D232E0451040DA1CD3A0 /* WeatherModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BBB92F1D613517D0B99E68 /* WeatherModuleInitializer.swift */; };
+		2BCF4CB66E92EB6A9AAB926B /* WeatherModuleRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3693F32899D1BE7B282BEFF2 /* WeatherModuleRouterInput.swift */; };
+		30C5244267F96EC5C7140AF1 /* WeatherModuleInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACECFA8DC2EDD3190701EDA6 /* WeatherModuleInteractorInput.swift */; };
+		37F9F7120C88B3E0BBC01629 /* WeatherModuleViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CDB2B366F2C5310E6BB732 /* WeatherModuleViewTests.swift */; };
 		4EF686D25DE40C7F6477CD26 /* Pods_WheatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CFB2FC4AE375E6EA66AD4F /* Pods_WheatherTests.framework */; };
+		5D4DE9DF3BA0A31A32ED6FFE /* WeatherModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE89B8A7BC1A0A1C92E95F /* WeatherModulePresenter.swift */; };
+		67822C58DE214E63587D06EB /* WeatherModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45B056062466B3874AD4CC /* WeatherModuleConfigurator.swift */; };
 		840C0EEF22B135EC004F8CA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C0EEE22B135EC004F8CA5 /* AppDelegate.swift */; };
 		840C0EF122B135EC004F8CA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C0EF022B135EC004F8CA5 /* ViewController.swift */; };
 		840C0EF422B135EC004F8CA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840C0EF222B135EC004F8CA5 /* Main.storyboard */; };
@@ -17,7 +24,17 @@
 		840C0EFC22B135ED004F8CA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840C0EFA22B135ED004F8CA5 /* LaunchScreen.storyboard */; };
 		840C0F0722B135ED004F8CA5 /* WheatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C0F0622B135ED004F8CA5 /* WheatherTests.swift */; };
 		840C0F1222B135ED004F8CA5 /* WheatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C0F1122B135ED004F8CA5 /* WheatherUITests.swift */; };
+		84228A879884562FC3DD3B79 /* WeatherModuleModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE752E690A2F82351DEC77F /* WeatherModuleModuleInput.swift */; };
+		88DC25FF5C84D311A5F5BD12 /* WeatherModuleRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60339202D8954AD2F985C36 /* WeatherModuleRouterTests.swift */; };
+		95412CA78A6994E72BCE8D23 /* WeatherModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BC7AF3E7504C1DD93C89C5 /* WeatherModuleInteractor.swift */; };
+		A24CA1E300BC64F1E68F143F /* WeatherModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52E8E89A8599B576E8C2B1A /* WeatherModuleRouter.swift */; };
+		AE382A2F83E1125E05A72B37 /* WeatherModuleInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AAF3E38AF4C0C3FDEE657 /* WeatherModuleInteractorOutput.swift */; };
 		B18B3648097FD3DDA73351C4 /* Pods_WheatherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AA350AD3C16A40C13DDB00 /* Pods_WheatherUITests.framework */; };
+		B1C18204812ECD96DE6D299C /* WeatherModuleInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0B561C662CBAF34787BE8A /* WeatherModuleInteractorTests.swift */; };
+		B98FEE6301009F4145214022 /* WeatherModulePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDE0DE447572AF7128146F /* WeatherModulePresenterTests.swift */; };
+		C4F5AADDCBA6BA8FD14EA524 /* WeatherModuleConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E7698662329C6391F9632C /* WeatherModuleConfiguratorTests.swift */; };
+		D5EFDC74151D6DDEA598438A /* WeatherModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB39FC37F4034CC3B75F4AAF /* WeatherModuleViewController.swift */; };
+		F3E8A59CA8F0E09C45CC6D1E /* WeatherModuleViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F0A8AB54FAD0C99DB90D0 /* WeatherModuleViewOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +55,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		067F0A8AB54FAD0C99DB90D0 /* WeatherModuleViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModuleViewOutput.swift; sourceTree = "<group>"; };
 		17AA350AD3C16A40C13DDB00 /* Pods_WheatherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheatherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB011C1594EA5E192D20A27 /* Pods-WheatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherTests.release.xcconfig"; path = "Target Support Files/Pods-WheatherTests/Pods-WheatherTests.release.xcconfig"; sourceTree = "<group>"; };
+		31E7698662329C6391F9632C /* WeatherModuleConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModuleConfiguratorTests.swift; sourceTree = "<group>"; };
 		35876E8976F75CB7A0EF7E80 /* Pods-WheatherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherUITests.debug.xcconfig"; path = "Target Support Files/Pods-WheatherUITests/Pods-WheatherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3693F32899D1BE7B282BEFF2 /* WeatherModuleRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModuleRouterInput.swift; sourceTree = "<group>"; };
+		47CDB2B366F2C5310E6BB732 /* WeatherModuleViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModuleViewTests.swift; sourceTree = "<group>"; };
+		5CE752E690A2F82351DEC77F /* WeatherModuleModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModuleModuleInput.swift; sourceTree = "<group>"; };
+		5D45B056062466B3874AD4CC /* WeatherModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModuleConfigurator.swift; sourceTree = "<group>"; };
 		622FBF1E00FD7B3F77FA3137 /* Pods_Wheather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wheather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6787AD7E1D58AEDA7F454014 /* WeatherModuleViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModuleViewInput.swift; sourceTree = "<group>"; };
+		6BEE89B8A7BC1A0A1C92E95F /* WeatherModulePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModulePresenter.swift; sourceTree = "<group>"; };
+		77BBB92F1D613517D0B99E68 /* WeatherModuleInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModuleInitializer.swift; sourceTree = "<group>"; };
 		840C0EEB22B135EC004F8CA5 /* Wheather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wheather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840C0EEE22B135EC004F8CA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		840C0EF022B135EC004F8CA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,11 +82,19 @@
 		840C0F0D22B135ED004F8CA5 /* WheatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		840C0F1122B135ED004F8CA5 /* WheatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherUITests.swift; sourceTree = "<group>"; };
 		840C0F1322B135ED004F8CA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843AAF3E38AF4C0C3FDEE657 /* WeatherModuleInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModuleInteractorOutput.swift; sourceTree = "<group>"; };
 		9980722C0EE34947DD168B4C /* Pods-Wheather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wheather.debug.xcconfig"; path = "Target Support Files/Pods-Wheather/Pods-Wheather.debug.xcconfig"; sourceTree = "<group>"; };
+		A60339202D8954AD2F985C36 /* WeatherModuleRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModuleRouterTests.swift; sourceTree = "<group>"; };
+		A7BC7AF3E7504C1DD93C89C5 /* WeatherModuleInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModuleInteractor.swift; sourceTree = "<group>"; };
+		ACECFA8DC2EDD3190701EDA6 /* WeatherModuleInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModuleInteractorInput.swift; sourceTree = "<group>"; };
 		B8232DF85B41520B58F1E2DB /* Pods-WheatherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherUITests.release.xcconfig"; path = "Target Support Files/Pods-WheatherUITests/Pods-WheatherUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BB39FC37F4034CC3B75F4AAF /* WeatherModuleViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModuleViewController.swift; sourceTree = "<group>"; };
 		E2644577E69E38670CD7C8C2 /* Pods-Wheather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wheather.release.xcconfig"; path = "Target Support Files/Pods-Wheather/Pods-Wheather.release.xcconfig"; sourceTree = "<group>"; };
+		EFFDE0DE447572AF7128146F /* WeatherModulePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModulePresenterTests.swift; sourceTree = "<group>"; };
 		F0CFB2FC4AE375E6EA66AD4F /* Pods_WheatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F52E8E89A8599B576E8C2B1A /* WeatherModuleRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModuleRouter.swift; sourceTree = "<group>"; };
 		F8A03B3476F159394A447B4E /* Pods-WheatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherTests.debug.xcconfig"; path = "Target Support Files/Pods-WheatherTests/Pods-WheatherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE0B561C662CBAF34787BE8A /* WeatherModuleInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModuleInteractorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +125,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CFB1C1DE7574F57198D7DA0 /* WeatherModule */ = {
+			isa = PBXGroup;
+			children = (
+				8AE426D36F225ABF10435B95 /* View */,
+				5BCB75B9C57A43B275345DBA /* Presenter */,
+				DDF1034DF6AC2E5BA41D78AC /* Interactor */,
+				7E14A827CF66FE1487F541E8 /* Router */,
+				6DCA1D63CFA72A9C3DDDFC8A /* Configurator */,
+			);
+			name = WeatherModule;
+			path = WeatherModule;
+			sourceTree = "<group>";
+		};
+		5BCB75B9C57A43B275345DBA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5CE752E690A2F82351DEC77F /* WeatherModuleModuleInput.swift */,
+				6BEE89B8A7BC1A0A1C92E95F /* WeatherModulePresenter.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5C3D364B6808ABCEA4CD1773 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A60339202D8954AD2F985C36 /* WeatherModuleRouterTests.swift */,
+			);
+			name = Router;
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6DCA1D63CFA72A9C3DDDFC8A /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				5D45B056062466B3874AD4CC /* WeatherModuleConfigurator.swift */,
+				77BBB92F1D613517D0B99E68 /* WeatherModuleInitializer.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		7E14A827CF66FE1487F541E8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3693F32899D1BE7B282BEFF2 /* WeatherModuleRouterInput.swift */,
+				F52E8E89A8599B576E8C2B1A /* WeatherModuleRouter.swift */,
+			);
+			name = Router;
+			path = Router;
+			sourceTree = "<group>";
+		};
 		840C0EE222B135EC004F8CA5 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +209,7 @@
 				840C0EFA22B135ED004F8CA5 /* LaunchScreen.storyboard */,
 				840C0EFD22B135ED004F8CA5 /* Info.plist */,
 				840C0EF522B135EC004F8CA5 /* Wheather.xcdatamodeld */,
+				2CFB1C1DE7574F57198D7DA0 /* WeatherModule */,
 			);
 			path = Wheather;
 			sourceTree = "<group>";
@@ -132,6 +219,7 @@
 			children = (
 				840C0F0622B135ED004F8CA5 /* WheatherTests.swift */,
 				840C0F0822B135ED004F8CA5 /* Info.plist */,
+				97A79984085E4EC084432291 /* WeatherModule */,
 			);
 			path = WheatherTests;
 			sourceTree = "<group>";
@@ -143,6 +231,26 @@
 				840C0F1322B135ED004F8CA5 /* Info.plist */,
 			);
 			path = WheatherUITests;
+			sourceTree = "<group>";
+		};
+		88B475598CD83C839F34956D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FE0B561C662CBAF34787BE8A /* WeatherModuleInteractorTests.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		8AE426D36F225ABF10435B95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6787AD7E1D58AEDA7F454014 /* WeatherModuleViewInput.swift */,
+				067F0A8AB54FAD0C99DB90D0 /* WeatherModuleViewOutput.swift */,
+				BB39FC37F4034CC3B75F4AAF /* WeatherModuleViewController.swift */,
+			);
+			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		96D01AA997E33EDC61EF4C60 /* Pods */ = {
@@ -157,6 +265,57 @@
 			);
 			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		97118D0D4355A7DC6EC09CF5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EFFDE0DE447572AF7128146F /* WeatherModulePresenterTests.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		97A79984085E4EC084432291 /* WeatherModule */ = {
+			isa = PBXGroup;
+			children = (
+				B85568BD7E7BC22295611AA3 /* Configurator */,
+				C7303A1065551BA4CBC02636 /* View */,
+				88B475598CD83C839F34956D /* Interactor */,
+				97118D0D4355A7DC6EC09CF5 /* Presenter */,
+				5C3D364B6808ABCEA4CD1773 /* Router */,
+			);
+			name = WeatherModule;
+			path = WeatherModule;
+			sourceTree = "<group>";
+		};
+		B85568BD7E7BC22295611AA3 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				31E7698662329C6391F9632C /* WeatherModuleConfiguratorTests.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		C7303A1065551BA4CBC02636 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47CDB2B366F2C5310E6BB732 /* WeatherModuleViewTests.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDF1034DF6AC2E5BA41D78AC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				ACECFA8DC2EDD3190701EDA6 /* WeatherModuleInteractorInput.swift */,
+				843AAF3E38AF4C0C3FDEE657 /* WeatherModuleInteractorOutput.swift */,
+				A7BC7AF3E7504C1DD93C89C5 /* WeatherModuleInteractor.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		FD73DE91DB4BC3E815D6D5FD /* Frameworks */ = {
@@ -393,6 +552,18 @@
 				840C0EF122B135EC004F8CA5 /* ViewController.swift in Sources */,
 				840C0EEF22B135EC004F8CA5 /* AppDelegate.swift in Sources */,
 				840C0EF722B135EC004F8CA5 /* Wheather.xcdatamodeld in Sources */,
+				15A109885A96B4A5C112FDB1 /* WeatherModuleViewInput.swift in Sources */,
+				F3E8A59CA8F0E09C45CC6D1E /* WeatherModuleViewOutput.swift in Sources */,
+				D5EFDC74151D6DDEA598438A /* WeatherModuleViewController.swift in Sources */,
+				84228A879884562FC3DD3B79 /* WeatherModuleModuleInput.swift in Sources */,
+				5D4DE9DF3BA0A31A32ED6FFE /* WeatherModulePresenter.swift in Sources */,
+				30C5244267F96EC5C7140AF1 /* WeatherModuleInteractorInput.swift in Sources */,
+				AE382A2F83E1125E05A72B37 /* WeatherModuleInteractorOutput.swift in Sources */,
+				95412CA78A6994E72BCE8D23 /* WeatherModuleInteractor.swift in Sources */,
+				2BCF4CB66E92EB6A9AAB926B /* WeatherModuleRouterInput.swift in Sources */,
+				A24CA1E300BC64F1E68F143F /* WeatherModuleRouter.swift in Sources */,
+				67822C58DE214E63587D06EB /* WeatherModuleConfigurator.swift in Sources */,
+				2B45D232E0451040DA1CD3A0 /* WeatherModuleInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +572,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				840C0F0722B135ED004F8CA5 /* WheatherTests.swift in Sources */,
+				C4F5AADDCBA6BA8FD14EA524 /* WeatherModuleConfiguratorTests.swift in Sources */,
+				37F9F7120C88B3E0BBC01629 /* WeatherModuleViewTests.swift in Sources */,
+				B1C18204812ECD96DE6D299C /* WeatherModuleInteractorTests.swift in Sources */,
+				B98FEE6301009F4145214022 /* WeatherModulePresenterTests.swift in Sources */,
+				88DC25FF5C84D311A5F5BD12 /* WeatherModuleRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
