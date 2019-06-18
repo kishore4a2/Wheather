@@ -24,6 +24,7 @@
 		840C0F0722B135ED004F8CA5 /* WheatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C0F0622B135ED004F8CA5 /* WheatherTests.swift */; };
 		840C0F1222B135ED004F8CA5 /* WheatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C0F1122B135ED004F8CA5 /* WheatherUITests.swift */; };
 		84228A879884562FC3DD3B79 /* WeatherModuleModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE752E690A2F82351DEC77F /* WeatherModuleModuleInput.swift */; };
+		845D9E2322B93BCB00080AE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 845D9E2222B93BCB00080AE7 /* GoogleService-Info.plist */; };
 		8424B69A22B65BF300526810 /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424B69222B65BF300526810 /* Wind.swift */; };
 		8424B69B22B65BF300526810 /* Clouds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424B69322B65BF300526810 /* Clouds.swift */; };
 		8424B69C22B65BF300526810 /* WheatherResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424B69422B65BF300526810 /* WheatherResp.swift */; };
@@ -92,6 +93,7 @@
 		840C0F1122B135ED004F8CA5 /* WheatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherUITests.swift; sourceTree = "<group>"; };
 		840C0F1322B135ED004F8CA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8424B69222B65BF300526810 /* Wind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
+		845D9E2222B93BCB00080AE7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8424B69322B65BF300526810 /* Clouds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clouds.swift; sourceTree = "<group>"; };
 		8424B69422B65BF300526810 /* WheatherResp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WheatherResp.swift; sourceTree = "<group>"; };
 		8424B69522B65BF300526810 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				840C0EF822B135ED004F8CA5 /* Assets.xcassets */,
 				840C0EFA22B135ED004F8CA5 /* LaunchScreen.storyboard */,
 				840C0EFD22B135ED004F8CA5 /* Info.plist */,
+				845D9E2222B93BCB00080AE7 /* GoogleService-Info.plist */,
 				840C0EF522B135EC004F8CA5 /* Wheather.xcdatamodeld */,
 			);
 			path = Wheather;
@@ -478,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				840C0EFC22B135ED004F8CA5 /* LaunchScreen.storyboard in Resources */,
+				845D9E2322B93BCB00080AE7 /* GoogleService-Info.plist in Resources */,
 				840C0EF922B135ED004F8CA5 /* Assets.xcassets in Resources */,
 				840C0EF422B135EC004F8CA5 /* Main.storyboard in Resources */,
 			);
