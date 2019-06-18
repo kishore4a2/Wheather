@@ -10,6 +10,7 @@ target 'Wheather' do
     pod 'RxCocoa', '~> 5'
     pod 'Firebase/Core'
     pod 'Firebase/RemoteConfig'
+    pod 'FirebaseFirestore'
 
   # Pods for Wheather
 
