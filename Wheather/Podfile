@@ -8,6 +8,8 @@ target 'Wheather' do
     pod 'AlamofireObjectMapper', '~> 5.2'
     pod 'RxSwift', '~> 5'
     pod 'RxCocoa', '~> 5'
+    pod 'Firebase/Core'
+    pod 'Firebase/RemoteConfig'
 
   # Pods for Wheather
 

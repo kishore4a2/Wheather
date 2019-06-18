@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		840C0EFC22B135ED004F8CA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840C0EFA22B135ED004F8CA5 /* LaunchScreen.storyboard */; };
 		840C0F0722B135ED004F8CA5 /* WheatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C0F0622B135ED004F8CA5 /* WheatherTests.swift */; };
 		840C0F1222B135ED004F8CA5 /* WheatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C0F1122B135ED004F8CA5 /* WheatherUITests.swift */; };
+		845D9E2322B93BCB00080AE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 845D9E2222B93BCB00080AE7 /* GoogleService-Info.plist */; };
 		B18B3648097FD3DDA73351C4 /* Pods_WheatherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AA350AD3C16A40C13DDB00 /* Pods_WheatherUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		840C0F0D22B135ED004F8CA5 /* WheatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		840C0F1122B135ED004F8CA5 /* WheatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherUITests.swift; sourceTree = "<group>"; };
 		840C0F1322B135ED004F8CA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845D9E2222B93BCB00080AE7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9980722C0EE34947DD168B4C /* Pods-Wheather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wheather.debug.xcconfig"; path = "Target Support Files/Pods-Wheather/Pods-Wheather.debug.xcconfig"; sourceTree = "<group>"; };
 		B8232DF85B41520B58F1E2DB /* Pods-WheatherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherUITests.release.xcconfig"; path = "Target Support Files/Pods-WheatherUITests/Pods-WheatherUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E2644577E69E38670CD7C8C2 /* Pods-Wheather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wheather.release.xcconfig"; path = "Target Support Files/Pods-Wheather/Pods-Wheather.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				840C0EF822B135ED004F8CA5 /* Assets.xcassets */,
 				840C0EFA22B135ED004F8CA5 /* LaunchScreen.storyboard */,
 				840C0EFD22B135ED004F8CA5 /* Info.plist */,
+				845D9E2222B93BCB00080AE7 /* GoogleService-Info.plist */,
 				840C0EF522B135EC004F8CA5 /* Wheather.xcdatamodeld */,
 			);
 			path = Wheather;
@@ -155,7 +158,6 @@
 				35876E8976F75CB7A0EF7E80 /* Pods-WheatherUITests.debug.xcconfig */,
 				B8232DF85B41520B58F1E2DB /* Pods-WheatherUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -278,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				840C0EFC22B135ED004F8CA5 /* LaunchScreen.storyboard in Resources */,
+				845D9E2322B93BCB00080AE7 /* GoogleService-Info.plist in Resources */,
 				840C0EF922B135ED004F8CA5 /* Assets.xcassets in Resources */,
 				840C0EF422B135EC004F8CA5 /* Main.storyboard in Resources */,
 			);
