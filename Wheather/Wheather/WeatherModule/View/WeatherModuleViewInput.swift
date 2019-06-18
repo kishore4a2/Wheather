@@ -14,4 +14,5 @@ protocol WeatherModuleViewInput: class {
     */
 
     func setupInitialState()
+    func reloadDataWithWhetherResp(_ wheatherResp:WheatherResp)
 }

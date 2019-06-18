@@ -9,5 +9,5 @@
 import Foundation
 
 protocol WeatherModuleInteractorOutput: class {
-
+    func gotWhetherResponse(_ whetherResp:WheatherResp)
 }

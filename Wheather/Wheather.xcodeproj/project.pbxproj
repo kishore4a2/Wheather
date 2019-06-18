@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,7 +17,6 @@
 		5D4DE9DF3BA0A31A32ED6FFE /* WeatherModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE89B8A7BC1A0A1C92E95F /* WeatherModulePresenter.swift */; };
 		67822C58DE214E63587D06EB /* WeatherModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45B056062466B3874AD4CC /* WeatherModuleConfigurator.swift */; };
 		840C0EEF22B135EC004F8CA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C0EEE22B135EC004F8CA5 /* AppDelegate.swift */; };
-		840C0EF122B135EC004F8CA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C0EF022B135EC004F8CA5 /* ViewController.swift */; };
 		840C0EF422B135EC004F8CA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840C0EF222B135EC004F8CA5 /* Main.storyboard */; };
 		840C0EF722B135EC004F8CA5 /* Wheather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 840C0EF522B135EC004F8CA5 /* Wheather.xcdatamodeld */; };
 		840C0EF922B135ED004F8CA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840C0EF822B135ED004F8CA5 /* Assets.xcassets */; };
@@ -25,6 +24,17 @@
 		840C0F0722B135ED004F8CA5 /* WheatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C0F0622B135ED004F8CA5 /* WheatherTests.swift */; };
 		840C0F1222B135ED004F8CA5 /* WheatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C0F1122B135ED004F8CA5 /* WheatherUITests.swift */; };
 		84228A879884562FC3DD3B79 /* WeatherModuleModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE752E690A2F82351DEC77F /* WeatherModuleModuleInput.swift */; };
+		8424B69A22B65BF300526810 /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424B69222B65BF300526810 /* Wind.swift */; };
+		8424B69B22B65BF300526810 /* Clouds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424B69322B65BF300526810 /* Clouds.swift */; };
+		8424B69C22B65BF300526810 /* WheatherResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424B69422B65BF300526810 /* WheatherResp.swift */; };
+		8424B69D22B65BF300526810 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424B69522B65BF300526810 /* Weather.swift */; };
+		8424B69E22B65BF300526810 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424B69622B65BF300526810 /* Main.swift */; };
+		8424B69F22B65BF300526810 /* Rain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424B69722B65BF300526810 /* Rain.swift */; };
+		8424B6A022B65BF300526810 /* Coord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424B69822B65BF300526810 /* Coord.swift */; };
+		8424B6A122B65BF300526810 /* Sys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424B69922B65BF300526810 /* Sys.swift */; };
+		8424B6A322B65F9D00526810 /* WheatherTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424B6A222B65F9D00526810 /* WheatherTableCell.swift */; };
+		8424B6A922B6709300526810 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424B6A822B6709300526810 /* DataManager.swift */; };
+		8424B6AB22B6728D00526810 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424B6AA22B6728D00526810 /* Constants.swift */; };
 		88DC25FF5C84D311A5F5BD12 /* WeatherModuleRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60339202D8954AD2F985C36 /* WeatherModuleRouterTests.swift */; };
 		95412CA78A6994E72BCE8D23 /* WeatherModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BC7AF3E7504C1DD93C89C5 /* WeatherModuleInteractor.swift */; };
 		A24CA1E300BC64F1E68F143F /* WeatherModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52E8E89A8599B576E8C2B1A /* WeatherModuleRouter.swift */; };
@@ -70,7 +80,6 @@
 		77BBB92F1D613517D0B99E68 /* WeatherModuleInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModuleInitializer.swift; sourceTree = "<group>"; };
 		840C0EEB22B135EC004F8CA5 /* Wheather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wheather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840C0EEE22B135EC004F8CA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		840C0EF022B135EC004F8CA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		840C0EF322B135EC004F8CA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		840C0EF622B135EC004F8CA5 /* Wheather.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wheather.xcdatamodel; sourceTree = "<group>"; };
 		840C0EF822B135ED004F8CA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +91,17 @@
 		840C0F0D22B135ED004F8CA5 /* WheatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		840C0F1122B135ED004F8CA5 /* WheatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherUITests.swift; sourceTree = "<group>"; };
 		840C0F1322B135ED004F8CA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8424B69222B65BF300526810 /* Wind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
+		8424B69322B65BF300526810 /* Clouds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clouds.swift; sourceTree = "<group>"; };
+		8424B69422B65BF300526810 /* WheatherResp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WheatherResp.swift; sourceTree = "<group>"; };
+		8424B69522B65BF300526810 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		8424B69622B65BF300526810 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		8424B69722B65BF300526810 /* Rain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rain.swift; sourceTree = "<group>"; };
+		8424B69822B65BF300526810 /* Coord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coord.swift; sourceTree = "<group>"; };
+		8424B69922B65BF300526810 /* Sys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sys.swift; sourceTree = "<group>"; };
+		8424B6A222B65F9D00526810 /* WheatherTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherTableCell.swift; sourceTree = "<group>"; };
+		8424B6A822B6709300526810 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		8424B6AA22B6728D00526810 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		843AAF3E38AF4C0C3FDEE657 /* WeatherModuleInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModuleInteractorOutput.swift; sourceTree = "<group>"; };
 		9980722C0EE34947DD168B4C /* Pods-Wheather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wheather.debug.xcconfig"; path = "Target Support Files/Pods-Wheather/Pods-Wheather.debug.xcconfig"; sourceTree = "<group>"; };
 		A60339202D8954AD2F985C36 /* WeatherModuleRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModuleRouterTests.swift; sourceTree = "<group>"; };
@@ -134,7 +154,6 @@
 				7E14A827CF66FE1487F541E8 /* Router */,
 				6DCA1D63CFA72A9C3DDDFC8A /* Configurator */,
 			);
-			name = WeatherModule;
 			path = WeatherModule;
 			sourceTree = "<group>";
 		};
@@ -144,7 +163,6 @@
 				5CE752E690A2F82351DEC77F /* WeatherModuleModuleInput.swift */,
 				6BEE89B8A7BC1A0A1C92E95F /* WeatherModulePresenter.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -153,7 +171,6 @@
 			children = (
 				A60339202D8954AD2F985C36 /* WeatherModuleRouterTests.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -163,7 +180,6 @@
 				5D45B056062466B3874AD4CC /* WeatherModuleConfigurator.swift */,
 				77BBB92F1D613517D0B99E68 /* WeatherModuleInitializer.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -173,7 +189,6 @@
 				3693F32899D1BE7B282BEFF2 /* WeatherModuleRouterInput.swift */,
 				F52E8E89A8599B576E8C2B1A /* WeatherModuleRouter.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -202,14 +217,15 @@
 		840C0EED22B135EC004F8CA5 /* Wheather */ = {
 			isa = PBXGroup;
 			children = (
-				840C0EEE22B135EC004F8CA5 /* AppDelegate.swift */,
-				840C0EF022B135EC004F8CA5 /* ViewController.swift */,
+				8424B6A722B66CB500526810 /* AppDelegate */,
+				8424B6A622B66CAC00526810 /* ServiceClass */,
+				8424B69122B65BF300526810 /* WheatherModel */,
+				2CFB1C1DE7574F57198D7DA0 /* WeatherModule */,
 				840C0EF222B135EC004F8CA5 /* Main.storyboard */,
 				840C0EF822B135ED004F8CA5 /* Assets.xcassets */,
 				840C0EFA22B135ED004F8CA5 /* LaunchScreen.storyboard */,
 				840C0EFD22B135ED004F8CA5 /* Info.plist */,
 				840C0EF522B135EC004F8CA5 /* Wheather.xcdatamodeld */,
-				2CFB1C1DE7574F57198D7DA0 /* WeatherModule */,
 			);
 			path = Wheather;
 			sourceTree = "<group>";
@@ -233,12 +249,43 @@
 			path = WheatherUITests;
 			sourceTree = "<group>";
 		};
+		8424B69122B65BF300526810 /* WheatherModel */ = {
+			isa = PBXGroup;
+			children = (
+				8424B69222B65BF300526810 /* Wind.swift */,
+				8424B69322B65BF300526810 /* Clouds.swift */,
+				8424B69422B65BF300526810 /* WheatherResp.swift */,
+				8424B69522B65BF300526810 /* Weather.swift */,
+				8424B69622B65BF300526810 /* Main.swift */,
+				8424B69722B65BF300526810 /* Rain.swift */,
+				8424B69822B65BF300526810 /* Coord.swift */,
+				8424B69922B65BF300526810 /* Sys.swift */,
+			);
+			path = WheatherModel;
+			sourceTree = "<group>";
+		};
+		8424B6A622B66CAC00526810 /* ServiceClass */ = {
+			isa = PBXGroup;
+			children = (
+				8424B6A822B6709300526810 /* DataManager.swift */,
+				8424B6AA22B6728D00526810 /* Constants.swift */,
+			);
+			path = ServiceClass;
+			sourceTree = "<group>";
+		};
+		8424B6A722B66CB500526810 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				840C0EEE22B135EC004F8CA5 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
 		88B475598CD83C839F34956D /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
 				FE0B561C662CBAF34787BE8A /* WeatherModuleInteractorTests.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -248,8 +295,8 @@
 				6787AD7E1D58AEDA7F454014 /* WeatherModuleViewInput.swift */,
 				067F0A8AB54FAD0C99DB90D0 /* WeatherModuleViewOutput.swift */,
 				BB39FC37F4034CC3B75F4AAF /* WeatherModuleViewController.swift */,
+				8424B6A222B65F9D00526810 /* WheatherTableCell.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -263,7 +310,6 @@
 				35876E8976F75CB7A0EF7E80 /* Pods-WheatherUITests.debug.xcconfig */,
 				B8232DF85B41520B58F1E2DB /* Pods-WheatherUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -272,7 +318,6 @@
 			children = (
 				EFFDE0DE447572AF7128146F /* WeatherModulePresenterTests.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -285,7 +330,6 @@
 				97118D0D4355A7DC6EC09CF5 /* Presenter */,
 				5C3D364B6808ABCEA4CD1773 /* Router */,
 			);
-			name = WeatherModule;
 			path = WeatherModule;
 			sourceTree = "<group>";
 		};
@@ -294,7 +338,6 @@
 			children = (
 				31E7698662329C6391F9632C /* WeatherModuleConfiguratorTests.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -303,7 +346,6 @@
 			children = (
 				47CDB2B366F2C5310E6BB732 /* WeatherModuleViewTests.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -314,7 +356,6 @@
 				843AAF3E38AF4C0C3FDEE657 /* WeatherModuleInteractorOutput.swift */,
 				A7BC7AF3E7504C1DD93C89C5 /* WeatherModuleInteractor.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -549,18 +590,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840C0EF122B135EC004F8CA5 /* ViewController.swift in Sources */,
+				8424B69C22B65BF300526810 /* WheatherResp.swift in Sources */,
+				8424B69B22B65BF300526810 /* Clouds.swift in Sources */,
 				840C0EEF22B135EC004F8CA5 /* AppDelegate.swift in Sources */,
 				840C0EF722B135EC004F8CA5 /* Wheather.xcdatamodeld in Sources */,
 				15A109885A96B4A5C112FDB1 /* WeatherModuleViewInput.swift in Sources */,
 				F3E8A59CA8F0E09C45CC6D1E /* WeatherModuleViewOutput.swift in Sources */,
 				D5EFDC74151D6DDEA598438A /* WeatherModuleViewController.swift in Sources */,
+				8424B6AB22B6728D00526810 /* Constants.swift in Sources */,
 				84228A879884562FC3DD3B79 /* WeatherModuleModuleInput.swift in Sources */,
+				8424B69A22B65BF300526810 /* Wind.swift in Sources */,
+				8424B6A322B65F9D00526810 /* WheatherTableCell.swift in Sources */,
+				8424B69E22B65BF300526810 /* Main.swift in Sources */,
 				5D4DE9DF3BA0A31A32ED6FFE /* WeatherModulePresenter.swift in Sources */,
 				30C5244267F96EC5C7140AF1 /* WeatherModuleInteractorInput.swift in Sources */,
 				AE382A2F83E1125E05A72B37 /* WeatherModuleInteractorOutput.swift in Sources */,
 				95412CA78A6994E72BCE8D23 /* WeatherModuleInteractor.swift in Sources */,
+				8424B69F22B65BF300526810 /* Rain.swift in Sources */,
+				8424B6A122B65BF300526810 /* Sys.swift in Sources */,
 				2BCF4CB66E92EB6A9AAB926B /* WeatherModuleRouterInput.swift in Sources */,
+				8424B6A022B65BF300526810 /* Coord.swift in Sources */,
+				8424B69D22B65BF300526810 /* Weather.swift in Sources */,
+				8424B6A922B6709300526810 /* DataManager.swift in Sources */,
 				A24CA1E300BC64F1E68F143F /* WeatherModuleRouter.swift in Sources */,
 				67822C58DE214E63587D06EB /* WeatherModuleConfigurator.swift in Sources */,
 				2B45D232E0451040DA1CD3A0 /* WeatherModuleInitializer.swift in Sources */,

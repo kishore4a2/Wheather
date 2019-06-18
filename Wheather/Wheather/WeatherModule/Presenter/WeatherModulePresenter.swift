@@ -6,6 +6,9 @@
 //  Copyright © 2019 11street. All rights reserved.
 //
 
+import RxSwift
+import RxCocoa
+
 class WeatherModulePresenter: WeatherModuleModuleInput, WeatherModuleViewOutput, WeatherModuleInteractorOutput {
 
     weak var view: WeatherModuleViewInput!
@@ -15,4 +18,11 @@ class WeatherModulePresenter: WeatherModuleModuleInput, WeatherModuleViewOutput,
     func viewIsReady() {
 
     }
+    func getWhetherData(forcity city: String) {
+         self.interactor.getWhetherData(forcity: city)
+    }
+    func gotWhetherResponse(_ whetherResp: WheatherResp) {
+        self.view.reloadDataWithWhetherResp(whetherResp)
+    }
+  
 }

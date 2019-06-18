@@ -7,19 +7,35 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class WeatherModuleViewController: UIViewController, WeatherModuleViewInput {
-
+    
+    
     var output: WeatherModuleViewOutput!
-
-    // MARK: Life cycle
+    @IBOutlet var lbl: UILabel!
+    
+    private let disposeBag = DisposeBag()
+    let dispatchTimeInterval = DispatchTimeInterval.seconds(Int(0.5))
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         output.viewIsReady()
     }
-
-
-    // MARK: WeatherModuleViewInput
-    func setupInitialState() {
+    @IBAction func click(_ sender: Any) {
+        
+        self.output.getWhetherData(forcity: "Melbourne")
     }
+    func reloadDataWithWhetherResp(_ wheatherResp:WheatherResp) {
+        self.lbl.text = wheatherResp.name
+    }
+    
+    // MARK: WeatherForecastViewInput
+    func setupInitialState() {
+        
+    }
+ 
 }

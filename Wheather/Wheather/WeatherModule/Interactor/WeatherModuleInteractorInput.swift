@@ -7,7 +7,9 @@
 //
 
 import Foundation
+import RxCocoa
+import RxSwift
 
 protocol WeatherModuleInteractorInput {
-
+ func getWhetherData(forcity city:String)
 }
