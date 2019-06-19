@@ -14,7 +14,11 @@ import FirebaseFirestore
 
 class WeatherModuleViewController: UIViewController, WeatherModuleViewInput {
     var output: WeatherModuleViewOutput!
-    @IBOutlet var lbl: UILabel!
+    @IBOutlet var cityName: UILabel!
+    @IBOutlet var cityWeather: UILabel!
+    @IBOutlet var cityWind: UILabel!
+    @IBOutlet var cityTemp: UILabel!
+    @IBOutlet var cityTime: UILabel!
     @IBOutlet var tableView: UITableView!
         private let disposeBag = DisposeBag()
     
@@ -25,11 +29,20 @@ class WeatherModuleViewController: UIViewController, WeatherModuleViewInput {
     }
     @IBAction func click(_ sender: Any) {
         
-        self.output.getWhetherData(forcity: "Melbourne")
     }
     func reloadDataWithWhetherResp(_ wheatherResp:WheatherResp) {
-        self.lbl.text = wheatherResp.name
+        if let cityName = wheatherResp.name {
+             self.cityName.text = cityName
+        }
+        self.cityWind.text = String(format: "%.2f", wheatherResp.wind?.speed ?? 0)
+        self.cityTemp.text = String(format: "%.2f", wheatherResp.main?.temp ?? 0)
+        let time = Date(timeIntervalSince1970:TimeInterval (wheatherResp.dt ?? 0))
+        self.cityTime.text = time.dateToString()
+        if let weatherDesp = wheatherResp.weather?[0].main {
+             self.cityWeather.text = weatherDesp
+        }
     }
+  
     fileprivate func reloadCityTableview() {
         
         let data = Observable<[String]>.just(Constants.shared.citiList!)
@@ -47,8 +60,7 @@ class WeatherModuleViewController: UIViewController, WeatherModuleViewInput {
             }
             .disposed(by: disposeBag)
     }
-    
-    
+
     func getCitiesListFromFirebase()  {
         FireBaseManager.shared.getCityListFromFirebase{
             self.reloadCityTableview()
