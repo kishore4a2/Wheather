@@ -8,14 +8,18 @@
 
 import UIKit
 import CoreData
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var remoteConfig:RemoteConfig!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Use Firebase library to configure APIs
+        FirebaseApp.configure()
+        self.remoteConfig = RemoteConfig.remoteConfig()
         // Override point for customization after application launch.
         return true
     }

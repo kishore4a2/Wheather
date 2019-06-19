@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import Foundation
 
-struct Constants
+class Constants: NSObject
 {
-    static let baseUrl = "http://api.openweathermap.org/data/2.5/weather"
-    static let appId = "baeff091cbf325ccdfabf61436e492bb"
+     var baseURL: String?
+     var appid: String?
+     var citiList :[String]?
+     static let shared = Constants()
+    
+    
 }

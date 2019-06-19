@@ -14,8 +14,8 @@ protocol DataManagerProtocol {
 class DataManager: DataManagerProtocol {
  
     func getWheather(forCity city: String, completionHandler: @escaping (DataResponse<WheatherResp>) -> ()) {
-        let parameters = ["q" : city, "appid" : Constants.appId]
-        let url = Constants.baseUrl
+        let parameters = ["q" : city, "appid" : Constants.shared.appid!]
+        let url = Constants.shared.baseURL!
         Alamofire.request(url, parameters: parameters).responseObject { (response: DataResponse<WheatherResp>) in
             completionHandler(response)
         }
