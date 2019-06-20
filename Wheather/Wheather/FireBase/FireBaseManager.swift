@@ -12,6 +12,7 @@ import ObjectMapper
 import AlamofireObjectMapper
 import CoreData
 import Sync
+import Alamofire
 class FireBaseManager: NSObject {
     static let shared = FireBaseManager()
     private let dataStack: DataStack
@@ -36,7 +37,9 @@ class FireBaseManager: NSObject {
                             }
                         }
                         Constants.shared.appid = RemoteConfig.remoteConfig().configValue(forKey: "appid").stringValue
+                        UserDefaults.standard.set(Constants.shared.appid, forKey: "appid")
                         Constants.shared.baseURL = RemoteConfig.remoteConfig().configValue(forKey: "baseURL").stringValue
+                       UserDefaults.standard.set(Constants.shared.baseURL, forKey: "baseURL")
                         Constants.shared.citiList = responseModel?.cities
                         completion()
                 }
@@ -45,24 +48,26 @@ class FireBaseManager: NSObject {
         {
             let request: NSFetchRequest<CityEntity> = CityEntity.fetchRequest()
             let offlineFetch = try! self.dataStack.viewContext.fetch(request)
-            var dictionary = offlineFetch[0].export()
-            
-            if #available(iOS 12.0, *) {
-                guard let unarchivedCities = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(offlineFetch[0].cities!)
-                    else {
-                        return
+            if (offlineFetch.count > 0){
+                var dictionary = offlineFetch[0].export()
+                if #available(iOS 12.0, *) {
+                    guard let unarchivedCities = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(offlineFetch[0].cities!)
+                        else {
+                            return
+                    }
+                    dictionary["cities"] = unarchivedCities as! [String]
+                } else {
+                    if let unarchivedCities = NSKeyedUnarchiver.unarchiveObject(with: offlineFetch[0].cities!) as? [String] {
+                        dictionary["cities"] = unarchivedCities
+                    }
                 }
-                dictionary["cities"] = unarchivedCities as! [String]
-            } else {
-                if let unarchivedCities = NSKeyedUnarchiver.unarchiveObject(with: offlineFetch[0].cities!) as? [String] {
-                    dictionary["cities"] = unarchivedCities
-                }
+                let offlineCityModel = Mapper<CitiesModel>().map(JSONObject:dictionary)
+                Constants.shared.citiList = offlineCityModel?.cities;
+                Constants.shared.appid = UserDefaults.standard.object(forKey: "appid") as? String
+                 Constants.shared.baseURL = UserDefaults.standard.object(forKey: "baseURL") as? String
+                completion()
             }
-            let ppp = Mapper<CitiesModel>().map(JSONObject:dictionary)
-            Constants.shared.citiList = ppp?.cities;
-            completion()
         }
-       
     }
 }
 

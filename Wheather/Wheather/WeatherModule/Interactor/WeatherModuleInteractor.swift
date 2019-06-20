@@ -31,9 +31,11 @@ class WeatherModuleInteractor: WeatherModuleInteractorInput {
          }else{
             var fetchResp = [WeatherRespEntity]()
             fetchResp = self.offlineFetchWeatherJson(for: city)
-            let dictionary = fetchResp[0].export()
-            let ppp = Mapper<WheatherResp>().map(JSONObject:dictionary)
-            self.output.gotWhetherResponse(ppp!)
+            if (fetchResp.count > 0){
+                let dictionary = fetchResp[0].export()
+                let offlineWeatherDetails = Mapper<WheatherResp>().map(JSONObject:dictionary)
+                self.output.gotWhetherResponse(offlineWeatherDetails!)
+            }
         }
     }
     func offlineFetchWeatherJson(for city:String) -> [WeatherRespEntity] {
