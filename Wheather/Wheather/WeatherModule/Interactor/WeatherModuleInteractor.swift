@@ -26,7 +26,7 @@ class WeatherModuleInteractor: WeatherModuleInteractorInput {
                     return
                 }
                 self.output.gotWhetherResponse(wheatherResp)
-                try! self.dataStack.insertOrUpdate(wheatherResp.dummyJson?.JSON ?? [:], inEntityNamed: WeatherRespEntity.entity().name!)
+                try! self.dataStack.insertOrUpdate(wheatherResp.dummyJson?.JSON ?? [:], inEntityNamed: "WeatherRespEntity")
             }
          }else{
             var fetchResp = [WeatherRespEntity]()

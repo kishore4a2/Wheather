@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18E226" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CityEntity" representedClassName="CityEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="cities" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="hyper.isPrimaryKey" value="true"/>
+            </userInfo>
+        </attribute>
+    </entity>
     <entity name="MainEntity" representedClassName="MainEntity" syncable="YES" codeGenerationType="class">
         <attribute name="temp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="weatherresp" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WeatherRespEntity" inverseName="main" inverseEntity="WeatherRespEntity" syncable="YES"/>
@@ -26,9 +34,10 @@
         <relationship name="wetherresp" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WeatherRespEntity" inverseName="wind" inverseEntity="WeatherRespEntity" syncable="YES"/>
     </entity>
     <elements>
-        <element name="WeatherRespEntity" positionX="-3435.83203125" positionY="-2084.453125" width="128" height="118"/>
-        <element name="WindEntity" positionX="-3134.48828125" positionY="-2037.67578125" width="128" height="73"/>
         <element name="MainEntity" positionX="-3128.34765625" positionY="-2183.66796875" width="128" height="73"/>
         <element name="WeatherEntity" positionX="-3213.44140625" positionY="-2285.640625" width="128" height="103"/>
+        <element name="WeatherRespEntity" positionX="-3435.83203125" positionY="-2084.453125" width="128" height="118"/>
+        <element name="WindEntity" positionX="-3134.48828125" positionY="-2037.67578125" width="128" height="73"/>
+        <element name="CityEntity" positionX="-3285" positionY="-2142" width="128" height="75"/>
     </elements>
 </model>
