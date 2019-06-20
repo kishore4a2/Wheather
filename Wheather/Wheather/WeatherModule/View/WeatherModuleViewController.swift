@@ -20,7 +20,9 @@ class WeatherModuleViewController: UIViewController, WeatherModuleViewInput {
     @IBOutlet var cityTemp: UILabel!
     @IBOutlet var cityTime: UILabel!
     @IBOutlet var tableView: UITableView!
-        private let disposeBag = DisposeBag()
+    @IBOutlet var tableHeightConstraint: NSLayoutConstraint!
+    @IBOutlet var dropDownImage: UIImageView!
+    private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +30,9 @@ class WeatherModuleViewController: UIViewController, WeatherModuleViewInput {
         self.getCitiesListFromFirebase()
     }
     @IBAction func click(_ sender: Any) {
+        self.tableHeightConstraint.constant = (self.tableHeightConstraint.constant == 0) ? 200 :0
+        let i = (self.tableHeightConstraint.constant == 0) ? 0 :180
+        self.animateView(rotationdeg: Double(i))
         
     }
     func reloadDataWithWhetherResp(_ wheatherResp:WheatherResp) {
@@ -66,7 +71,13 @@ class WeatherModuleViewController: UIViewController, WeatherModuleViewInput {
             self.reloadCityTableview()
         }
     }
-    
+    func animateView(rotationdeg:Double)  {
+        UIView.animate(withDuration: 0.3, animations: {
+             self.dropDownImage.transform = CGAffineTransform(rotationAngle: CGFloat(rotationdeg * Double.pi / 180))
+            self.view.layoutIfNeeded()
+        }) { (finished) in
+        }
+    }
     // MARK: WeatherForecastViewInput
     func setupInitialState() {
         

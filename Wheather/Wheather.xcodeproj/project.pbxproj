@@ -32,7 +32,6 @@
 		8424B69F22B65BF300526810 /* Rain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424B69722B65BF300526810 /* Rain.swift */; };
 		8424B6A022B65BF300526810 /* Coord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424B69822B65BF300526810 /* Coord.swift */; };
 		8424B6A122B65BF300526810 /* Sys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424B69922B65BF300526810 /* Sys.swift */; };
-		8424B6A322B65F9D00526810 /* WheatherTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424B6A222B65F9D00526810 /* WheatherTableCell.swift */; };
 		8424B6A922B6709300526810 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424B6A822B6709300526810 /* DataManager.swift */; };
 		8424B6AB22B6728D00526810 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424B6AA22B6728D00526810 /* Constants.swift */; };
 		845D9E2322B93BCB00080AE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 845D9E2222B93BCB00080AE7 /* GoogleService-Info.plist */; };
@@ -105,7 +104,6 @@
 		8424B69722B65BF300526810 /* Rain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rain.swift; sourceTree = "<group>"; };
 		8424B69822B65BF300526810 /* Coord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coord.swift; sourceTree = "<group>"; };
 		8424B69922B65BF300526810 /* Sys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sys.swift; sourceTree = "<group>"; };
-		8424B6A222B65F9D00526810 /* WheatherTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherTableCell.swift; sourceTree = "<group>"; };
 		8424B6A822B6709300526810 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		8424B6AA22B6728D00526810 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		843AAF3E38AF4C0C3FDEE657 /* WeatherModuleInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModuleInteractorOutput.swift; sourceTree = "<group>"; };
@@ -336,7 +334,6 @@
 				6787AD7E1D58AEDA7F454014 /* WeatherModuleViewInput.swift */,
 				067F0A8AB54FAD0C99DB90D0 /* WeatherModuleViewOutput.swift */,
 				BB39FC37F4034CC3B75F4AAF /* WeatherModuleViewController.swift */,
-				8424B6A222B65F9D00526810 /* WheatherTableCell.swift */,
 				845D9E2A22B9E28800080AE7 /* CityCell.swift */,
 			);
 			path = View;
@@ -647,7 +644,6 @@
 				8424B69A22B65BF300526810 /* Wind.swift in Sources */,
 				845D9E2522B9C96000080AE7 /* FireBaseManager.swift in Sources */,
 				845D9E2722B9CA4100080AE7 /* Connectivity.swift in Sources */,
-				8424B6A322B65F9D00526810 /* WheatherTableCell.swift in Sources */,
 				8424B69E22B65BF300526810 /* Main.swift in Sources */,
 				5D4DE9DF3BA0A31A32ED6FFE /* WeatherModulePresenter.swift in Sources */,
 				30C5244267F96EC5C7140AF1 /* WeatherModuleInteractorInput.swift in Sources */,
