@@ -114,6 +114,7 @@ PODS:
   - RxRelay (5.0.0):
     - RxSwift (~> 5)
   - RxSwift (5.0.0)
+  - Sync (5.1.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
@@ -123,6 +124,7 @@ DEPENDENCIES:
   - FirebaseFirestore
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
+  - Sync (~> 5)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -148,6 +150,7 @@ SPEC REPOS:
     - RxCocoa
     - RxRelay
     - RxSwift
+    - Sync
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
@@ -172,7 +175,8 @@ SPEC CHECKSUMS:
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  Sync: 0412c2b068eb7cf1a04607e948ef92cbd6114d0f
 
-PODFILE CHECKSUM: db1836dfe1c29baa83bb1dc9863475ba37e281e7
+PODFILE CHECKSUM: 2f419dd8927ea20369726d42f8146efd1f8598e9
 
 COCOAPODS: 1.7.2

@@ -7,6 +7,7 @@
 //
 import Alamofire
 import AlamofireObjectMapper
+import ObjectMapper
 
 protocol DataManagerProtocol {
     func getWheather(forCity city: String, completionHandler: @escaping (DataResponse<WheatherResp>)->())

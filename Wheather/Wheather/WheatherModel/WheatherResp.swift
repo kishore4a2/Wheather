@@ -18,13 +18,14 @@ struct WheatherResp : Mappable {
 	var id : Int?
 	var name : String?
 	var cod : Int?
-
+    var dummyJson : Map?
 	init?(map: Map) {
 
 	}
 
 	mutating func mapping(map: Map) {
 
+        dummyJson =  map
 		coord <- map["coord"]
 		weather <- map["weather"]
 		base <- map["base"]
