@@ -15,5 +15,5 @@ protocol WeatherModuleViewOutput {
     */
 
     func viewIsReady()
-    func getWhetherData(forcity city:String)
+    func getWhetherData(forcity city:String, completion: @escaping (_ success:Bool) -> Void)
 }

@@ -10,15 +10,15 @@ import AlamofireObjectMapper
 import ObjectMapper
 
 protocol DataManagerProtocol {
-    func getWheather(forCity city: String, completionHandler: @escaping (DataResponse<WheatherResp>)->())
+    func getWheather(forCity city: String, completionHandler: @escaping (DataResponse<WheatherResp>, _ success:Bool)->())
 }
 class DataManager: DataManagerProtocol {
  
-    func getWheather(forCity city: String, completionHandler: @escaping (DataResponse<WheatherResp>) -> ()) {
+    func getWheather(forCity city: String, completionHandler: @escaping (DataResponse<WheatherResp>,_ success:Bool) -> ()) {
         let parameters = ["q" : city, "appid" : Constants.shared.appid!]
         let url = Constants.shared.baseURL!
         Alamofire.request(url, parameters: parameters).responseObject { (response: DataResponse<WheatherResp>) in
-            completionHandler(response)
+            completionHandler(response, true)
         }
     }
 }

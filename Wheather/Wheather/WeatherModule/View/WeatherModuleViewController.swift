@@ -11,6 +11,7 @@ import RxSwift
 import RxCocoa
 import FirebaseCore
 import FirebaseFirestore
+import Toast_Swift
 
 class WeatherModuleViewController: UIViewController, WeatherModuleViewInput {
     var output: WeatherModuleViewOutput!
@@ -30,6 +31,9 @@ class WeatherModuleViewController: UIViewController, WeatherModuleViewInput {
         self.getCitiesListFromFirebase()
     }
     @IBAction func click(_ sender: Any) {
+        if Constants.shared.citiList == nil {
+            self.getCitiesListFromFirebase()
+        }
         self.tableHeightConstraint.constant = (self.tableHeightConstraint.constant == 0) ? 200 :0
         let i = (self.tableHeightConstraint.constant == 0) ? 0 :180
         self.animateView(rotationdeg: Double(i))
@@ -61,14 +65,24 @@ class WeatherModuleViewController: UIViewController, WeatherModuleViewInput {
             .zip(tableView.rx.itemSelected, tableView.rx.modelSelected(String.self))
             .bind { [unowned self] indexPath, cityName in
                 self.tableView.deselectRow(at: indexPath, animated: true)
-                self.output.getWhetherData(forcity:cityName)
+                self.view.makeToastActivity(.center)
+                self.output.getWhetherData(forcity: cityName, completion: { (success) in
+                    self.view.hideToastActivity()
+                    if(!success){
+                        self.view.makeToast(Constants.noInternet, duration: 0.3, position: .bottom)
+                    }
+                })
             }
             .disposed(by: disposeBag)
     }
 
     func getCitiesListFromFirebase()  {
-        FireBaseManager.shared.getCityListFromFirebase{
-            self.reloadCityTableview()
+        FireBaseManager.shared.getCityListFromFirebase{(success) in
+            if (success){
+                self.reloadCityTableview()
+            }else{
+                self.view.makeToast(Constants.noInternet, duration: 0.3, position: .bottom)
+            }
         }
     }
     func animateView(rotationdeg:Double)  {

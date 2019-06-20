@@ -11,5 +11,5 @@ import RxCocoa
 import RxSwift
 
 protocol WeatherModuleInteractorInput {
- func getWhetherData(forcity city:String)
+ func getWhetherData(forcity city:String, completion: @escaping (_ success:Bool) -> Void)
 }

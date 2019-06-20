@@ -19,7 +19,7 @@ class FireBaseManager: NSObject {
     override init() {
         self.dataStack = DataStack(modelName: "Wheather")
     }
-    func getCityListFromFirebase(completion: @escaping () -> Void) {
+    func getCityListFromFirebase(completion: @escaping (_ success:Bool) -> Void) {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             fatalError()
         }
@@ -41,9 +41,12 @@ class FireBaseManager: NSObject {
                         Constants.shared.baseURL = RemoteConfig.remoteConfig().configValue(forKey: "baseURL").stringValue
                        UserDefaults.standard.set(Constants.shared.baseURL, forKey: "baseURL")
                         Constants.shared.citiList = responseModel?.cities
-                        completion()
+                        completion(true)
+                    return
                 }
+                 completion(false)
             }
+           
         }else
         {
             let request: NSFetchRequest<CityEntity> = CityEntity.fetchRequest()
@@ -65,8 +68,9 @@ class FireBaseManager: NSObject {
                 Constants.shared.citiList = offlineCityModel?.cities;
                 Constants.shared.appid = UserDefaults.standard.object(forKey: "appid") as? String
                  Constants.shared.baseURL = UserDefaults.standard.object(forKey: "baseURL") as? String
-                completion()
+                completion(true)
             }
+            completion(false)
         }
     }
 }

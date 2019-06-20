@@ -12,6 +12,7 @@ target 'Wheather' do
     pod 'Firebase/RemoteConfig'
     pod 'FirebaseFirestore'
     pod 'Sync', '~> 5'
+    pod 'Toast-Swift', '~> 5.0.0'
   # Pods for Wheather
 
   target 'WheatherTests' do

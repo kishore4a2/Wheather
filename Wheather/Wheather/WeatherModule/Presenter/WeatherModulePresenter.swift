@@ -18,8 +18,15 @@ class WeatherModulePresenter: WeatherModuleModuleInput, WeatherModuleViewOutput,
     func viewIsReady() {
 
     }
-    func getWhetherData(forcity city: String) {
-         self.interactor.getWhetherData(forcity: city)
+    func getWhetherData(forcity city: String, completion: @escaping (Bool) -> Void) {
+        self.interactor.getWhetherData(forcity: city) { (success) in
+            if(success){
+                completion(true)
+            }else{
+                completion(false)
+            }
+        }
+        
     }
     func gotWhetherResponse(_ whetherResp: WheatherResp) {
         self.view.reloadDataWithWhetherResp(whetherResp)

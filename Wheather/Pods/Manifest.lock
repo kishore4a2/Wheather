@@ -115,6 +115,7 @@ PODS:
     - RxSwift (~> 5)
   - RxSwift (5.0.0)
   - Sync (5.1.0)
+  - Toast-Swift (5.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
@@ -125,6 +126,7 @@ DEPENDENCIES:
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
   - Sync (~> 5)
+  - Toast-Swift (~> 5.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -151,6 +153,7 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - Sync
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
@@ -176,7 +179,8 @@ SPEC CHECKSUMS:
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
   Sync: 0412c2b068eb7cf1a04607e948ef92cbd6114d0f
+  Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
 
-PODFILE CHECKSUM: 2f419dd8927ea20369726d42f8146efd1f8598e9
+PODFILE CHECKSUM: f7e56a1a03721878f7d49cfe9664a31816ade9fe
 
 COCOAPODS: 1.7.2

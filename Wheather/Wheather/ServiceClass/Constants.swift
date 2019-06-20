@@ -15,4 +15,5 @@ class Constants: NSObject
      var appid: String?
      var citiList :[String]?
      static let shared = Constants()
+    static let noInternet = "No Internet"
 }

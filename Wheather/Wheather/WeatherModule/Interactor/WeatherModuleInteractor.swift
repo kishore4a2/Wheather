@@ -19,14 +19,19 @@ class WeatherModuleInteractor: WeatherModuleInteractorInput {
     init() {
         self.dataStack = DataStack(modelName: "Wheather")
     }
-    func getWhetherData(forcity city: String){
+    func getWhetherData(forcity city: String, completion: @escaping (Bool) -> Void) {
          if Connectivity.isConnectedToInternet() {
-            self.dataManager.getWheather(forCity: city) { (dataResponse) in
-                guard let wheatherResp = dataResponse.result.value else {
-                    return
+            self.dataManager.getWheather(forCity: city) { (dataResponse,success)  in
+                if(success){
+                    guard let wheatherResp = dataResponse.result.value else {
+                        return
+                    }
+                    self.output.gotWhetherResponse(wheatherResp)
+                    try! self.dataStack.insertOrUpdate(wheatherResp.dummyJson?.JSON ?? [:], inEntityNamed: "WeatherRespEntity")
+                    completion(true)
+                }else{
+                    completion(false)
                 }
-                self.output.gotWhetherResponse(wheatherResp)
-                try! self.dataStack.insertOrUpdate(wheatherResp.dummyJson?.JSON ?? [:], inEntityNamed: "WeatherRespEntity")
             }
          }else{
             var fetchResp = [WeatherRespEntity]()
@@ -35,6 +40,9 @@ class WeatherModuleInteractor: WeatherModuleInteractorInput {
                 let dictionary = fetchResp[0].export()
                 let offlineWeatherDetails = Mapper<WheatherResp>().map(JSONObject:dictionary)
                 self.output.gotWhetherResponse(offlineWeatherDetails!)
+                completion(true)
+            }else{
+                completion(false)
             }
         }
     }
