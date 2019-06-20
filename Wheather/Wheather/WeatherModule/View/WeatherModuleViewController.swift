@@ -47,8 +47,10 @@ class WeatherModuleViewController: UIViewController, WeatherModuleViewInput {
         self.cityTemp.text = String(format: "%.2f", wheatherResp.main?.temp ?? 0)
         let time = Date(timeIntervalSince1970:TimeInterval (wheatherResp.dt ?? 0))
         self.cityTime.text = time.dateToString()
-        if let weatherDesp = wheatherResp.weather?[0].main {
-             self.cityWeather.text = weatherDesp
+        if wheatherResp.weather?.count ?? 0 > 0{
+            if let weatherDesp = wheatherResp.weather?[0].main {
+                self.cityWeather.text = weatherDesp
+            }
         }
     }
   
