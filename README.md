@@ -1,6 +1,10 @@
 # Wheather
 Code Test – Get Current Weather
 
+Architecture:- VIPER
+
+Using "GENERAMBA" to install the viper templates
+
 Using below pods
 
 Alamofire
